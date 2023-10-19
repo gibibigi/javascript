@@ -9,18 +9,28 @@
             color: white;
             font: normal 20pt Arial;
         }
-    </style>
-    <title>Exercicio 5</title>
-</head>
-<body>
-    <h1>Noooooooooooooossssssssaaaaaaaaaa</h1>
-    <script>
-        var a = 5 + 3;
+
+        /*var a = 5 + 3;
         var b = a % 5;
         var c = 5 * b ** 2;
         var d = 10 - a / 2;
         var e = 6 * 2 /d;
-        var f = b % e + 4 / e;
+        var f = b % e + 4 / e;*/
+    </style>
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="a">Clique em Mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0];
+        window.document.write('Esta escrito assim: ' + p1.innerHTML);
+        p1.style.color = 'red';
+        var d = window.document.querySelector('div#a');
+        d.style.color = 'yellow';
+        window.document.write('Esta escrito assim: ' + d.innerHTML);
         document.write('Olá, ' + nome + '. Seu nome tem: ' + nome.length + '. ');
         document.write('Seu nome em maiúsculas é: ' + nome.toUpperCase() + '. ');
         document.write('Seu nome em minúsculas é: ' + nome.toLowerCase() + '.');
