@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(93, 93, 158);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        div#a{
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h1>Estudos com o DOM</h1>
+    <div id="a">Interaja...</div>
+    <script>
+        var a = window.document.getElementById('a');
+
+        a.addEventListener('click',c);
+        a.addEventListener('mouseenter',e);
+        a.addEventListener('mouseout',s);
+
+        function c(){
+            a.innerText = 'Clicou!';
+            a.style.background = 'blue';
+        }
+
+        function e(){
+            a.innerText = 'Entrou!';
+            a.style.background = 'orange';
+        }
+
+        function s(){
+            a.innerText = 'Saiu!';
+            a.style.background = 'red';
+        }
+    </script>
+</body>
+</html>
