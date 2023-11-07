@@ -3,6 +3,8 @@ function verificar(){
     var ano = data.getFullYear();
     var fano = document.getElementById('txtano');
     var res = document.querySelector('div#res');
+
+    //res.innerHTML = res.value;
     
     if(fano.value.lenght == 0 || Number(fano.value) > ano ){
         window.alert('[ERRO] Verifique os dados e tente novamente!');
